@@ -68,12 +68,12 @@ def DefrostCalc(Tdbo, Twbo, DemandDefrost="OnDemand", tfrac_defrost=None):
 OAT = 2.7 # Outdoor Air Temperature in C
 Outdoor_WBT = 1.332824959 # Outdoor Wet-Bulb Temperature in C
 Indoor_WBT = 12.1110695 # Indoor Wet-Bulb Temperature in C
-Delivered_Load = 175901.2156 # in W
+Delivered_Load = 175901.2156 # in J
 
 
 # Non-changing parameters
 OAT_max_defrost = 5 # Maximum Outdoor Air Temperature for Defrost Operation in C
-Q_total_rated = 14333.9065 # Rated total capacity in J
+Q_total_rated = 14333.9065 # Rated total capacity in W
 COP_rated = 3.8377982946518
 
 
@@ -100,3 +100,4 @@ else:
 print(f"Total heating power: {P_heating * 60} J")
 
 print(f"Defrost power: {P_defrost * 60} J")
+
